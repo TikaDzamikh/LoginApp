@@ -7,8 +7,9 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+final class LoginViewController: UIViewController {
 
+    // MARK: - IBOutlets
     @IBOutlet var userNameTF: UITextField!
     @IBOutlet var passwordTF: UITextField!
 
@@ -22,6 +23,7 @@ class LoginViewController: UIViewController {
         self.view.endEditing(true)
     }
     
+    // MARK: - IBActions
     @IBAction func logInButtonTapped() {
         guard userNameTF.text == "One", passwordTF.text == "1" else {
             showAlert(withTitle: "Invalid login or password", andMessage: "Please, enter correct login and password")
@@ -43,6 +45,7 @@ class LoginViewController: UIViewController {
     }
 }
 
+// MARK: - UIAlertController
 extension LoginViewController {
     private func showAlert (withTitle title: String, andMessage message: String) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
