@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <device id="retina6_12" orientation="portrait" appearance="dark"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -94,36 +94,38 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IsH-jA-SeX">
-                                <rect key="frame" x="60" y="189" width="273" height="20.666666666666657"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="60" y="189" width="273" height="33.666666666666657"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="28"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="👋" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rdv-Qb-8ai">
+                                <rect key="frame" x="169.66666666666666" y="255.66666666666663" width="54" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uRS-Ft-kKn">
-                                <rect key="frame" x="155" y="555.66666666666663" width="82" height="34.333333333333371"/>
+                                <rect key="frame" x="149.66666666666666" y="565.66666666666663" width="94" height="39.333333333333371"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Log out"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Log out">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="21"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="logOutButtonTapped" destination="BFx-gk-2kn" eventType="touchUpInside" id="LfV-6u-6Vd"/>
                                     <segue destination="MWc-IM-5gm" kind="unwind" unwindAction="unwindSegueWithSegue:" id="Ivc-SC-gw8"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="👋" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rdv-Qb-8ai">
-                                <rect key="frame" x="169.66666666666666" y="227.66666666666663" width="54" height="60"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bBe-WY-OyT"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Rdv-Qb-8ai" firstAttribute="top" secondItem="IsH-jA-SeX" secondAttribute="bottom" constant="18" id="F6I-UO-8Vu"/>
+                            <constraint firstItem="uRS-Ft-kKn" firstAttribute="centerX" secondItem="Umx-iF-qDM" secondAttribute="centerX" id="1Nr-Rl-Wsk"/>
+                            <constraint firstItem="Rdv-Qb-8ai" firstAttribute="top" secondItem="IsH-jA-SeX" secondAttribute="bottom" constant="33" id="F6I-UO-8Vu"/>
                             <constraint firstItem="Rdv-Qb-8ai" firstAttribute="centerX" secondItem="Umx-iF-qDM" secondAttribute="centerX" id="Fgs-CG-1aM"/>
-                            <constraint firstItem="bBe-WY-OyT" firstAttribute="bottom" secondItem="uRS-Ft-kKn" secondAttribute="bottom" constant="228" id="Hoh-yb-NbG"/>
                             <constraint firstItem="IsH-jA-SeX" firstAttribute="leading" secondItem="bBe-WY-OyT" secondAttribute="leading" constant="60" id="Msv-H3-yEl"/>
-                            <constraint firstItem="bBe-WY-OyT" firstAttribute="trailing" secondItem="uRS-Ft-kKn" secondAttribute="trailing" constant="156" id="QAF-Tf-hyx"/>
-                            <constraint firstItem="uRS-Ft-kKn" firstAttribute="leading" secondItem="bBe-WY-OyT" secondAttribute="leading" constant="155" id="hvK-Rc-7m2"/>
+                            <constraint firstItem="uRS-Ft-kKn" firstAttribute="top" secondItem="Rdv-Qb-8ai" secondAttribute="bottom" constant="250" id="QeM-t1-1oA"/>
                             <constraint firstItem="IsH-jA-SeX" firstAttribute="top" secondItem="bBe-WY-OyT" secondAttribute="top" constant="130" id="qVd-hP-0DA"/>
                             <constraint firstItem="bBe-WY-OyT" firstAttribute="trailing" secondItem="IsH-jA-SeX" secondAttribute="trailing" constant="60" id="rFu-mm-oye"/>
                         </constraints>
