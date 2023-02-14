@@ -30,7 +30,7 @@ final class WelcomeViewController: UIViewController {
             UIColor.systemPink.cgColor,
             UIColor.systemIndigo.cgColor,
         ]
-        gradient.locations = [0, 1]
+        gradient.locations = [0.2, 0.8]
         gradient.startPoint = CGPoint(x: 0, y: 0)
         gradient.endPoint = CGPoint(x: 0, y: 1)
         view.layer.insertSublayer(gradient, at: 0)
