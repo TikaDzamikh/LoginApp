@@ -94,7 +94,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IsH-jA-SeX">
-                                <rect key="frame" x="60" y="189" width="273" height="20.333333333333343"/>
+                                <rect key="frame" x="60" y="189" width="273" height="20.666666666666657"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -109,7 +109,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="👋" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rdv-Qb-8ai">
-                                <rect key="frame" x="169" y="227.33333333333337" width="54" height="60"/>
+                                <rect key="frame" x="169.66666666666666" y="227.66666666666663" width="54" height="60"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -118,12 +118,11 @@
                         <viewLayoutGuide key="safeArea" id="bBe-WY-OyT"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="bBe-WY-OyT" firstAttribute="trailing" secondItem="Rdv-Qb-8ai" secondAttribute="trailing" constant="170" id="DlJ-SA-OqN"/>
                             <constraint firstItem="Rdv-Qb-8ai" firstAttribute="top" secondItem="IsH-jA-SeX" secondAttribute="bottom" constant="18" id="F6I-UO-8Vu"/>
+                            <constraint firstItem="Rdv-Qb-8ai" firstAttribute="centerX" secondItem="Umx-iF-qDM" secondAttribute="centerX" id="Fgs-CG-1aM"/>
                             <constraint firstItem="bBe-WY-OyT" firstAttribute="bottom" secondItem="uRS-Ft-kKn" secondAttribute="bottom" constant="228" id="Hoh-yb-NbG"/>
                             <constraint firstItem="IsH-jA-SeX" firstAttribute="leading" secondItem="bBe-WY-OyT" secondAttribute="leading" constant="60" id="Msv-H3-yEl"/>
                             <constraint firstItem="bBe-WY-OyT" firstAttribute="trailing" secondItem="uRS-Ft-kKn" secondAttribute="trailing" constant="156" id="QAF-Tf-hyx"/>
-                            <constraint firstItem="Rdv-Qb-8ai" firstAttribute="leading" secondItem="bBe-WY-OyT" secondAttribute="leading" constant="169" id="X9U-mU-4O0"/>
                             <constraint firstItem="uRS-Ft-kKn" firstAttribute="leading" secondItem="bBe-WY-OyT" secondAttribute="leading" constant="155" id="hvK-Rc-7m2"/>
                             <constraint firstItem="IsH-jA-SeX" firstAttribute="top" secondItem="bBe-WY-OyT" secondAttribute="top" constant="130" id="qVd-hP-0DA"/>
                             <constraint firstItem="bBe-WY-OyT" firstAttribute="trailing" secondItem="IsH-jA-SeX" secondAttribute="trailing" constant="60" id="rFu-mm-oye"/>
