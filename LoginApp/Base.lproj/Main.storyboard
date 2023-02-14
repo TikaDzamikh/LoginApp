@@ -35,7 +35,7 @@
                                         <buttonConfiguration key="configuration" style="filled" title="Log in"/>
                                         <connections>
                                             <action selector="logInButtonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="exM-md-ong"/>
-                                            <segue destination="BFx-gk-2kn" kind="presentation" modalPresentationStyle="fullScreen" id="3Tx-LG-eEo"/>
+                                            <segue destination="BFx-gk-2kn" kind="presentation" identifier="welcomeVCSegue" modalPresentationStyle="fullScreen" id="3Tx-LG-eEo"/>
                                         </connections>
                                     </button>
                                 </subviews>

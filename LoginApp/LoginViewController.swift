@@ -25,15 +25,15 @@ final class LoginViewController: UIViewController {
     
     // MARK: - IBActions
     @IBAction func logInButtonTapped() {
-        guard userNameTF.text == "One", passwordTF.text == "1" else {
-            showAlert(
-                withTitle: "Invalid login or password",
-                andMessage: "Please, enter correct login and password"
-            )
-            return
+        if userNameTF.text == "One", passwordTF.text == "1" {
+            performSegue(withIdentifier: "welcomeVCSegue", sender: self)
+        } else {showAlert(
+            withTitle: "Invalid login or password",
+            andMessage: "Please, enter correct login and password"
+        )
         }
     }
-        
+    
     @IBAction func forgotUNButtonTapped() {
         showAlert(withTitle: "Ooops!", andMessage: "Your name is One")
     }
