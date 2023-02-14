@@ -26,7 +26,10 @@ final class LoginViewController: UIViewController {
     // MARK: - IBActions
     @IBAction func logInButtonTapped() {
         guard userNameTF.text == "One", passwordTF.text == "1" else {
-            showAlert(withTitle: "Invalid login or password", andMessage: "Please, enter correct login and password")
+            showAlert(
+                withTitle: "Invalid login or password",
+                andMessage: "Please, enter correct login and password"
+            )
             return
         }
     }
